@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Posa't en contacte amb el Jovent Gironí per a tot: fes-te soci, demana entrades per als partits, compra en la botiga, o comparteix els teus suggeriments, opinions i altres consultes. Uneix-te a la nostra comunitat apassionada pel Girona FC i ajuda'ns a fer vibrar la grada!">
+  <meta name="keywords" content="Jovent Gironí, Girona FC, animació oficial, notícies Girona, esdeveniments, desplaçaments, botiga, galeria, identitat, afició gironista, suport, cultura gironista, projectes de joventut, futbol català, passió per l'animació">
+  <title>Contacte | Jovent Gironí</title>
+  <link rel="shortcut icon" href="/img/favicon-logo-jovent-gironi.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+  <div class="contenedorprincipal flex flex-col justify-center items-center">
+       <!-- HEADER -->
+    <header class="relative w-full bg-[var(--color-primary)] lg:mb-14">
+      <nav class="relative max-w-6xl mx-auto flex justify-between items-center p-3 md:p-2">
+        <!-- Botó hamburguesa -->
+        <button id="hamburgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Obrir menú de navegació"
+          class="text-6xl font-bold text-white m-4">
+          <!-- Hamburguesa (≡). Farem servir classes de Tailwind per a la rotació i la transició -->
+          <span class="block transform transition-transform duration-500">≡</span>
+        </button>
+        <!-- Logo centrat -->
+        <a href="index.html" class="flex flex-grow" aria-label="Inici">
+          <img src="img/fondo-web-transparente-200.webp" 
+     alt="Logo del Jovent Gironí"
+     class="mx-auto cursor-pointer h-28 md:h-40 lg:h-60" 
+     loading="eager"
+     srcset="img/fondo-web-transparente-150.webp 150w, img/fondo-web-transparente-200.webp 200w, img/fondo-web-transparente.webp 300w"
+     sizes="(max-width: 768px) 150px, (max-width: 1024px) 200px, 300px">
+
+        </a>
+        <!-- Menú d'escriptori -->
+        <div class="hidden lg:flex justify-center absolute bottom-[-52px] left-0 right-0 bg-black/60 rounded-b-lg">
+          <ul class="flex uppercase font-semibold text-lg tracking-wide">
+            <li class="hover:bg-red-600/50  transition duration-300 px-6 py-3"><a href="index.html" class="w-full p-4 hover:text-white text-white font-extralight">inici</a></li>
+            <li class="hover:bg-white/50 transition duration-300 px-6 py-3"><a href="identitat.html" class="w-full p-4 text-white hover:text-white font-extralight">identitat</a></li>
+            <li class="hover:bg-red-600/50 transition duration-300 px-6 py-3"><a href="noticies.html" class="w-full p-4 hover:text-white text-white font-extralight">notícies</a></li>
+            <li class="hover:bg-white/50 transition duration-300 px-6 py-3"><a href="botiga.html" class="w-full p-4 text-white hover:text-white font-extralight">botiga</a></li>
+            <li class="hover:bg-red-600/50 transition duration-300 px-6 py-3"><a href="galeria.html" class="w-full p-4 hover:text-white text-white font-extralight">galeria</a></li>
+            <li class="hover:bg-white/50 transition duration-300 px-6 py-3"><a href="contacte.html" class="w-full p-4 text-white hover:text-white font-extralight">contacte</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Menú mòbil -->
+      <div id="mobileMenu" class="lg:hidden hidden flex-col items-center w-full px-4 py-6 bg-[#666666]">
+        <ul class="flex flex-col space-y-1 font-extralight text-lg capitalize text-center tracking-wide">
+          <li class="hover:bg-red-600/50 rounded p-4"><a href="index.html" class="block hover:text-white text-white font-extralight">inici</a></li>
+          <li class="hover:bg-white/40 rounded p-4"><a href="identitat.html" class="block text-white hover:text-white font-extralight">identitat</a></li>
+          <li class="hover:bg-red-600/50 rounded p-4"><a href="noticies.html" class="block hover:text-white text-white font-extralight">notícies</a></li>
+          <li class="hover:bg-white/40 rounded p-4"><a href="botiga.html" class="block text-white hover:text-white font-extralight">botiga</a></li>
+          <li class="hover:bg-red-600/50 rounded p-4"><a href="galeria.html" class="block hover:text-white text-white font-extralight">galeria</a></li>
+          <li class="hover:bg-white/40 rounded p-4"><a href="contacte.html" class="block text-white hover:text-white font-extralight">contacte</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Contingut principal de Contacte -->
+    <main class="w-full max-w-6xl p-4">
+      <section class="my-8">
+        <h1 class="text-4xl font-extrabold text-center text-red-900 border-b-2 pb-4" id="contactes">Contacte</h1>
+        <div class="bg-gray-50 p-6 rounded shadow-md mb-8">
+          <p class="text-lg font-medium text-gray-800 mb-4">
+            Per tal d'atendre millor la teva consulta, selecciona el motiu pel qual et poses en contacte amb nosaltres:
+          </p>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li class="mb-2">
+              <strong class="text-red-800">Fes-te soci</strong>: Escull aquesta opció si vols afiliar-te. El preu de renovació és de 25€ i el de noves altes de 35€.
+            </li>
+            <li class="mb-2">
+              <strong class="text-red-800">Entrades partit</strong>: Aquesta opció és per demanar entrades per als partits. Has de ser soci del Jovent o acompanyar algun soci. El preu final variarà segons la teva situació.
+            </li>
+            <li class="mb-2">
+              <strong class="text-red-800">Botiga</strong>: Si vols comprar algun article de la botiga, posa't en contacte amb nosaltres. Les guanyances es destinen a finançar les activitats del grup d'animació.
+            </li>
+            <li class="mb-2">
+              <strong class="text-red-800">Suggeriments</strong>: Envia'ns les teves idees i comentaris per millorar els nostres serveis i activitats.
+            </li>
+            <li class="mb-2">
+              <strong class="text-red-800">Opinions</strong>: Comparteix amb nosaltres la teva experiència o qualsevol opinió que vulguis fer-nos arribar.
+            </li>
+            <li class="mb-2">
+              <strong class="text-red-800">Altres</strong>: Per qualsevol altre tema o consulta que no s'adapti a les opcions anteriors.
+            </li>
+          </ul>
+        </div>
+        <!-- FORMULARI DE CONTACTE -->
+        <section class="bg-white shadow rounded p-6 mb-6 w-full">
+          <h2 class="text-2xl font-bold mb-4 text-red-800">Formulari de contacte</h2>
+          <form action="https://formspree.io/f/xrbelzqz" method="POST" class="space-y-4" id="formularicontacte">
+            <!-- NOM -->
+            <div>
+              <label for="name" class="block font-semibold mb-2">
+                Nom<span class="text-red-800"> *</span>
+              </label>
+              <input type="text" id="name" name="name" placeholder="El teu nom" required pattern="[A-Za-zÀ-ÖÙ-öù-ÿ\s]+" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+          <!-- COGNOMS -->
+            <div>
+              <label for="surname" class="block font-semibold mb-2">Cognoms
+                <!-- <span class="text-red-800"> *</span> -->
+              </label>
+              <input type="text" id="surname" name="surname" placeholder="Els teus cognoms" required pattern="[A-Za-zÀ-ÖÙ-öù-ÿ\s]+" class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <!-- TELÈFON -->
+            <div> <label for="telefon" class="block font-semibold mb-2"> Telèfon<span class="text-red-800"> *</span> </label> 
+              <input type="tel" id="telefon" name="telefon" placeholder="El teu telèfon" required pattern="^[0-9]{9}$" maxlength="9"
+                class="w-full border border-gray-300 p-2 rounded"> </div>
+          <!-- CORREU ELECTRÒNIC -->
+            <div>
+              <label for="email" class="block font-semibold mb-2">
+                Correu electrònic<span class="text-red-800"> *</span>
+              </label>
+              <input type="email" id="email" name="email" placeholder="El teu correu" required class="w-full border border-gray-300 p-2 rounded">
+            </div>
+          <!-- SÍ/NO -->
+            <fieldset>
+              <legend class="block font-semibold mb-2">
+                Ets soci del Jovent Gironí?<span class="text-red-800"> *</span>
+              </legend>
+              <div class="flex gap-4">
+                <div class="flex items-center gap-2">
+                  <input type="radio" id="soci-si" name="soci" value="sí" required>
+                  <label for="soci-si" class="text-gray-800"> Sí</label>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input type="radio" id="soci-no" name="soci" value="no">
+                  <label for="soci-no" class="text-gray-800"> No</label>
+                </div>
+              </div>
+            </fieldset>
+          <!-- MOTIU DE CONTACTE -->
+            <div>
+              <label for="reason" class="block font-semibold mb-2">
+                Motiu del contacte<span class="text-red-800"> *</span>
+              </label>
+              <select id="reason" name="reason" required class="w-full border border-gray-300 p-2 rounded">
+                <option value="">Selecciona una opció</option>
+                <option value="fes-te-soci">Fes-te Soci</option>
+                <option value="entrades-partit">Entrades Partit</option>
+                <option value="botiga">Botiga</option>
+                <option value="suggeriments">Suggeriments</option>
+                <option value="opinions">Opinions</option>
+                <option value="altres">Altres</option>
+              </select>
+            </div>
+          <!-- ASSUMPTE -->
+            <div id="subject-container" class="hidden">
+              <label for="subject" class="block font-semibold mb-2">
+                Assumpte<span class="text-red-800"> *</span>
+              </label>
+              <input type="text" id="subject" name="subject" placeholder="Assumpte del missatge" required class="w-full border border-gray-300 p-2 rounded">
+            </div>
+          <!-- MISSATGE -->
+            <div>
+              <label for="message" class="block font-semibold mb-2">
+                Missatge<span class="text-red-800"> *</span>
+              </label>
+              <textarea id="message" name="message" rows="5" placeholder="Escriu el teu missatge" required class="w-full border border-gray-300 p-2 rounded"></textarea>
+            </div>
+          <!-- PRIVACITAT -->
+            <div class="flex items-start">
+              <input type="checkbox" id="accept" name="accept" required class="mr-2 mt-1">
+              <label for="accept" class="text-sm">
+                <span class="text-red-800">*</span> Accepto la política de privacitat i l’ús de les meves dades personals 
+              </label>
+            </div>
+          <!-- BOTO ENVIAR -->
+            <button type="submit" class="bg-[#CF152D] hover:bg-red-800 text-white px-4 py-4 rounded">
+              Enviar
+            </button>
+          </form>
+          
+          <!-- Informació de contacte -->
+          <section class="mt-8">
+            <h2 class="text-2xl font-bold mb-4">Informació de contacte</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+              <!-- Informació de contacte -->
+              <div class="block">
+                <p><strong class="text-red-800">Telèfon:</strong><a href="tel:+34679946564" class="text-black font-light" target="_blank"> (+34) 679 946 564</a></p>
+                <p class="mt-2"><strong class="text-red-800">Correu electrònic:</strong><a href="mailto:joventgironi@gmail.com" class="text-black font-light" target="_blank"> joventgironi@gmail.com</a></p>
+              </div>
+              <!-- Xarxes socials -->
+              <div class="flex flex-wrap md:flex-nowrap justify-center items-center gap-8 mt-4">
+                <a href="https://www.instagram.com/JoventGironi" target="_blank" class="hover:scale-110 hover:text-green-400 transition-transform duration-300" aria-label="Instagram Jovent Gironí">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#CF152D" viewBox="0 0 24 24" class="h-10 w-10">
+                    <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm5.5-.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/JoventGironi" target="_blank" class="hover:scale-110 transition-transform duration-300" aria-label="Facebook Jovent Gironí">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#CF152D" viewBox="0 0 24 24" class="h-10 w-10">
+                    <path d="M22 12.07C22 6.54 17.52 2 12 2S2 6.54 2 12.07c0 5 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34V22c4.78-.76 8.44-4.88 8.44-9.93Z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/JoventGironi" target="_blank" class="hover:scale-110 transition-transform duration-300" aria-label="Twitter Jovent Gironí">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#CF152D" viewBox="0 0 24 24" class="h-10 w-10">
+                    <path d="M22.46 6c-.77.35-1.5.59-2.28.69a4.01 4.01 0 0 0 1.77-2.22 7.78 7.78 0 0 1-2.47.95 3.92 3.92 0 0 0-6.68 3.57A11.13 11.13 0 0 1 3.16 5.15a3.92 3.92 0 0 0 1.21 5.23 3.88 3.88 0 0 1-1.77-.5v.05a3.93 3.93 0 0 0 3.14 3.84 4 4 0 0 1-1.76.07 3.93 3.93 0 0 0 3.67 2.73A7.87 7.87 0 0 1 2 18.57 11.11 11.11 0 0 0 8.29 20c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.36 8.36 0 0 0 22.46 6Z"/>
+                  </svg>
+                </a>
+                <a href="https://www.youtube.com/@joventgironi" target="_blank" class="hover:scale-110 transition-transform duration-300" aria-label="YouTube Jovent Gironí">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#CF152D" viewBox="0 0 24 24" class="h-10 w-10">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8 8s-.2-1.4-.8-2a3 3 0 0 0-2.1-.8C16.9 5 12 5 12 5s-4.9 0-7.9.2a3 3 0 0 0-2.1.8c-.6.6-.8 2-.8 2S1 9.6 1 11.2v1.6C1 14.4 1.2 16 1.2 16s.2 1.4.8 2a3 3 0 0 0 2.1.8C7.1 19 12 19 12 19s4.9 0 7.9-.2a3 3 0 0 0 2.1-.8c.6-.6.8-2 .8-2s.2-1.6.2-3.2V11.2c0-1.6-.2-3.2-.2-3.2ZM10 15V9l6 3-6 3Z"/>
+                  </svg>
+                </a>    
+              </div>
+            </div>
+          </section>
+          </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#CF152D] text-white py-8 w-full">
+      <div class="container mx-auto px-4">
+        <!-- Seccions Principals -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <!-- Sobre Nosaltres -->
+          <div>
+            <h2 class="text-xl font-bold mb-2">Sobre Nosaltres</h2>
+            <p class="text-gray-100">
+              Som una organització juvenil apassionada pel Girona FC que viu i impulsa la grada amb emoció i compromís.
+              Descobreix la nostra història, valors i la passió que ens uneix.
+            </p>
+          </div>
+          <!-- Enllaços Ràpids -->
+          <div>
+            <h2 class="text-xl font-bold mb-2">Enllaços Ràpids</h2>
+            <ul class="space-y-1">
+              <li><a href="index.html" class="hover:text-gray-400 text-gray-100">Inici</a></li>
+              <li><a href="identitat.html" class="hover:text-gray-400 text-gray-100">Identitat</a></li>
+              <li><a href="noticies.html" class="hover:text-gray-400 text-gray-100">Notícies</a></li>
+              <li><a href="botiga.html" class="hover:text-gray-400 text-gray-100">Botiga</a></li>
+              <li><a href="galeria.html" class="hover:text-gray-400 text-gray-100">Galeria</a></li>
+              <li><a href="contacte.html" class="hover:text-gray-400 text-gray-100">Contacte</a></li>
+            </ul>
+          </div>
+          <!-- Contacte i Enllaços d’Interès -->
+          <div>
+            <h2 class="text-xl font-bold mb-2">Contacte i Informació</h2>
+            <p class="text-gray-100 mb-2">Tel: <a href="tel:+34679946564" class="hover:text-gray-400 text-gray-100" target="_blank">(+34) 679 946 564</a></p>
+            <p class="text-gray-100">Correu: <a href="mailto:joventgironi@gmail.com" class="hover:text-gray-400 text-gray-100" target="_blank">joventgironi@gmail.com</a></p>
+            <h3 class="text-lg font-bold mt-4 mb-2">Enllaços d’Interès</h3>
+            <ul class="space-y-1">
+              <li><a href="https://www.gironafc.cat/" target="_blank" class="hover:text-gray-400 text-gray-100" >Partners</a></li>
+              <li><a href="https://www.gironafc.cat/" target="_blank" class="hover:text-gray-400 text-gray-100">Col·laboracions</a></li>
+              <li><a href="https://www.gironafc.cat/" target="_blank" class="hover:text-gray-400 text-gray-100">Recursos</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div>
+            <h2 class="text-xl font-bold mb-2">Subscriu-te al Newsletter</h2>
+            <form action="https://formspree.io/f/xrbelzqz" method="POST" class="space-y-3">
+              <div>
+                <label for="email1" class="block text-gray-100 mb-1">Correu electrònic</label>
+                <input type="email" id="email1" name="email" placeholder="El teu correu" required
+                  class="w-full p-2 rounded border border-gray-300 text-gray-800">
+              </div>
+              <div class="flex items-center justify-center">
+                <input type="checkbox" id="privacy" name="privacy" required class="mr-2">
+                <label for="privacy" class="text-gray-100 text-sm">* Accepto la política de privacitat</label>
+              </div>
+              <button type="submit"
+                class="bg-gray-100 text-[#CF152D] px-4 py-2 rounded font-bold hover:bg-gray-400 transition">
+                Subscriure't
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Xarxes Socials i Copyright -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-8 border-t border-gray-700 pt-4">
+          <!-- Xarxes Socials -->
+          <div class="flex space-x-4 justify-center gap-4"> <a href="https://www.instagram.com/JoventGironi" target="_blank"
+              aria-label="Instagram Jovent Gironí" class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+                <path
+                  d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm5.5-.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z" />
+              </svg> </a> <a href="https://www.facebook.com/JoventGironi" target="_blank" aria-label="Facebook Jovent Gironí"
+              class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+                <path
+                  d="M22 12.07C22 6.54 17.52 2 12 2S2 6.54 2 12.07c0 5 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34V22c4.78-.76 8.44-4.88 8.44-9.93Z" />
+              </svg> </a> <a href="https://twitter.com/JoventGironi" target="_blank" aria-label="Twitter Jovent Gironí"
+              class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+                <path
+                  d="M22.46 6c-.77.35-1.5.59-2.28.69a4.01 4.01 0 0 0 1.77-2.22 7.78 7.78 0 0 1-2.47.95 3.92 3.92 0 0 0-6.68 3.57A11.13 11.13 0 0 1 3.16 5.15a3.92 3.92 0 0 0 1.21 5.23 3.88 3.88 0 0 1-1.77-.5v.05a3.93 3.93 0 0 0 3.14 3.84 4 4 0 0 1-1.76.07 3.93 3.93 0 0 0 3.67 2.73A7.87 7.87 0 0 1 2 18.57 11.11 11.11 0 0 0 8.29 20c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.36 8.36 0 0 0 22.46 6Z" />
+              </svg> </a> <a href="https://youtu.be/eYihPMBBfy8?si=ZAW4t6XyE1QJMCpe" target="_blank" aria-label="YouTube Jovent Gironí"
+              class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.8 8s-.2-1.4-.8-2a3 3 0 0 0-2.1-.8C16.9 5 12 5 12 5s-4.9 0-7.9.2a3 3 0 0 0-2.1.8c-.6.6-.8 2-.8 2S1 9.6 1 11.2v1.6C1 14.4 1.2 16 1.2 16s.2 1.4.8 2a3 3 0 0 0 2.1.8C7.1 19 12 19 12 19s4.9 0 7.9-.2a3 3 0 0 0 2.1-.8c.6-.6.8-2 .8-2s.2-1.6.2-3.2V11.2c0-1.6-.2-3.2-.2-3.2ZM10 15V9l6 3-6 3Z" />
+              </svg> </a> </div>
+          <div class="text-sm text-gray-100">
+            &copy; 2025 Jovent Gironí. Tots els drets reservats.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+   // MENU HAMBURGUESA
+   const hamburgerBtn = document.querySelector("#hamburgerBtn");
+    const mobileMenu = document.querySelector("#mobileMenu");
+    const iconSpan    = hamburgerBtn.querySelector("span");
+
+    hamburgerBtn.addEventListener("click", () => {
+      // 1) Amagar/mostrar el menú
+      mobileMenu.classList.toggle("hidden");
+
+      // 2) Girar la icona de hamburguesa 180° o tornar a 0°
+      iconSpan.classList.toggle("rotate-90");      
+
+      // 3) Per accessibilitat, actualitza l'atribut aria-expanded
+      const expanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
+      hamburgerBtn.setAttribute("aria-expanded", expanded ? "false" : "true");
+    });
+    // script per amagar l'assumpte del missatge   
+  const reasonSelect = document.getElementById('reason');
+  const subjectContainer = document.getElementById('subject-container');
+  const subjectInput = document.getElementById('subject');
+
+  reasonSelect.addEventListener('change', () => {
+    const value = reasonSelect.value;
+    const showField = ['suggeriments', 'opinions', 'altres'].includes(value);
+
+    subjectContainer.classList.toggle('hidden', !showField);
+    subjectInput.required = showField;
+  });
+  </script>
+</body>
+
+</html>

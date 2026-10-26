@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descobreix les notícies més rellevants del Jovent Gironí: informació actualitzada sobre desplaçaments, esdeveniments, viatges i partits que reflecteixen la passió i l’energia del Girona FC.">
+  <meta name="keywords" content="Jovent Gironí, Girona FC, animació oficial, notícies Girona, esdeveniments, desplaçaments, botiga, galeria, identitat, afició gironista, suport, cultura gironista, projectes de joventut, futbol català, passió per l'animació">
+  <title>Notícies | Jovent Gironí</title>
+  <link rel="shortcut icon" href="/img/favicon-logo-jovent-gironi.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/output.css">
+</head>  
+
+<body>
+  <div class="contenedorprincipal flex flex-col justify-center items-center">
+        <!-- HEADER -->
+    <header class="relative w-full bg-[var(--color-primary)] lg:mb-14">
+      <nav class="relative max-w-6xl mx-auto flex justify-between items-center p-3 md:p-2">
+        <!-- Botó hamburguesa -->
+        <button id="hamburgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Obrir menú de navegació"
+          class="text-6xl font-bold text-white m-4 lg:hidden">
+          <!-- Hamburguesa (≡). Farem servir classes de Tailwind per a la rotació i la transició -->
+          <span class="block transform transition-transform duration-500">≡</span>
+        </button>
+        <!-- Logo centrat -->
+        <a href="index.html" class="flex flex-grow" aria-label="Inici">
+          <img src="img/fondo-web-transparente-200.webp" 
+     alt="Logo del Jovent Gironí"
+     class="mx-auto cursor-pointer h-28 md:h-40 lg:h-60" 
+     loading="eager"
+     srcset="img/fondo-web-transparente-150.webp 150w, img/fondo-web-transparente-200.webp 200w, img/fondo-web-transparente.webp 300w"
+     sizes="(max-width: 768px) 150px, (max-width: 1024px) 200px, 300px"></a>
+       <!-- Menú d'escriptori -->
+       <div class="hidden lg:flex justify-center absolute bottom-[-52px] left-0 right-0 bg-black/60 rounded-b-lg">
+        <ul class="flex uppercase font-semibold text-lg tracking-wide">
+          <li class="hover:bg-red-600/50  transition duration-300 px-6 py-3"><a href="index.html" class="w-full p-4 hover:text-white text-white font-extralight">inici</a></li>
+          <li class="hover:bg-white/50 transition duration-300 px-6 py-3"><a href="identitat.html" class="w-full p-4 text-white hover:text-white font-extralight">identitat</a></li>
+          <li class="hover:bg-red-600/50 transition duration-300 px-6 py-3"><a href="noticies.html" class="w-full p-4 hover:text-white text-white font-extralight">notícies</a></li>
+          <li class="hover:bg-white/50 transition duration-300 px-6 py-3"><a href="botiga.html" class="w-full p-4 text-white hover:text-white font-extralight">botiga</a></li>
+          <li class="hover:bg-red-600/50 transition duration-300 px-6 py-3"><a href="galeria.html" class="w-full p-4 hover:text-white text-white font-extralight">galeria</a></li>
+          <li class="hover:bg-white/50 transition duration-300 px-6 py-3"><a href="contacte.html" class="w-full p-4 text-white hover:text-white font-extralight">contacte</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menú mòbil -->
+    <div id="mobileMenu" class="lg:hidden hidden flex-col items-center w-full px-4 py-6 bg-[#666666]">
+      <ul class="flex flex-col space-y-1 font-extralight text-lg capitalize text-center tracking-wide">
+        <li class="hover:bg-red-600/50 rounded p-4"><a href="index.html" class="block hover:text-white text-white font-extralight">inici</a></li>
+        <li class="hover:bg-white/40 rounded p-4"><a href="identitat.html" class="block text-white hover:text-white font-extralight">identitat</a></li>
+        <li class="hover:bg-red-600/50 rounded p-4"><a href="noticies.html" class="block hover:text-white text-white font-extralight">notícies</a></li>
+        <li class="hover:bg-white/40 rounded p-4"><a href="botiga.html" class="block text-white hover:text-white font-extralight">botiga</a></li>
+        <li class="hover:bg-red-600/50 rounded p-4"><a href="galeria.html" class="block hover:text-white text-white font-extralight">galeria</a></li>
+        <li class="hover:bg-white/40 rounded p-4"><a href="contacte.html" class="block text-white hover:text-white font-extralight">contacte</a></li>
+      </ul>
+      </div>
+    </header>
+    <!-- Contingut principal de Notícies -->
+<main class="w-full max-w-6xl mx-auto p-4 lg:mt-14">
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h1 class="text-4xl font-extrabold text-center mt-14 text-red-900 border-b-2 pb-2">
+        Notícies <span class="text-sm text-black font-extralight">
+          <br><br class="hidden lg:block">Aquesta secció està dedicada a notícies rellevants que abasten desplaçaments, esdeveniments i activitats relacionades amb el món del Girona FC.
+          Els articles, elaborats per JOVENT GIRONÍ, ofereixen informació actualitzada i exclusiva relacionada amb el Girona FC.
+        </span>
+      </h1>
+      <!-- Notícia 1 -->
+<article class="bg-white shadow-lg rounded-lg p-6 mb-6" id="milano">  
+  <img src="img/viatge-milan.jpg" alt="Viatge a Milà" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4">
+  <h2 class="text-2xl font-bold text-red-800 mb-2">
+    Desplaçament a Milà amb el Jovent Gironí
+  </h2>
+  <p class="text-gray-600 text-sm mb-4">Data: 22/01/2025</p>
+  <p class="text-gray-700 leading-relaxed">
+    El Jovent Gironí organitza un viatge en autobús fins a Milà per animar el Girona FC en un partit 
+    que es disputarà al mític estadi Giuseppe Meazza. Sortirem des de Montilivi i, un cop a la capital 
+    de la moda, ens retrobarem en diversos punts de trobada fins a l'inici de la marxa. 
+    Viu una experiència única a Itàlia!
+  </p>
+   <div class="more-content hidden text-gray-700 leading-relaxed mt-4">
+    <p>
+      El viatge es realitzarà el dimecres 22 de gener, amb arribada prevista a la 
+      <strong>Piazza del Duomo</strong> a les 12:00h. A les 13:00h ens traslladarem fins a 
+      <strong>Navigli (Piazzale Stazione Genova)</strong>, i a les 17:00h iniciarem la marxa 
+      des de l'<strong>Estació Porta Genova</strong> cap al Giuseppe Meazza. El partit està programat a les 21:00h.<br><br>
+     <strong>Punts clau del viatge:</strong><br>
+      &bull; Sortida des de l’Estadi de Montilivi (Girona)<br>
+      &bull; Arribada a la Piazza del Duomo (12:00h)<br>
+      &bull; Trobada a Navigli (13:00h)<br>
+      &bull; Inici de la marxa des de Porta Genova (17:00h)<br>
+      &bull; Partit al Giuseppe Meazza (21:00h)<br><br>
+      <img src="img/mapa-milan.jpg" alt="Mapa de Milà" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4">
+      El preu és de 110€ per als socis i 130€ per als no socis, i inclou tant l’autobús com 
+      l’entrada al partit. Per a més informació o per apuntar-vos, podeu contactar-nos per WhatsApp 
+      al 679.94.65.64 o al nostre correu <em>joventgironi@gmail.com</em>.<br><br>
+      No deixeu escapar l’oportunitat de viure una jornada inoblidable a Milà, 
+      animant el Girona FC en un dels estadis més emblemàtics d’Europa. 
+      Us hi esperem per compartir aquesta gran experiència amb tota l’afició gironina!
+    </p>
+  </div>  
+  <a href="#" class="toggle-btn text-red-700 hover:underline mt-4 block">Llegir més...</a>
+</article>     
+      <!-- Notícia 2 -->
+      <article class="bg-white shadow-lg rounded-lg p-6 mb-6" id="taty">
+        <img src="img/noticia1.jpg" alt="Girona FC en acció" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4">
+        <h2 class="text-2xl font-bold text-red-800 mb-2">
+          ¡El Girona fa història!
+        </h2>
+        <p class="text-gray-600 text-sm mb-4">Data: 05/04/2025</p>
+        <p class="text-gray-700 leading-relaxed">
+          El Girona FC ha aconseguit una victòria històrica davant el Reial Madrid, per primer cop el Girona ha derrotat i de forma contundent al Reial Madrid demostrant el seu potencial i consolidant la seva posició a la lliga. El Jovent Gironi va estar present animant l'equip amb tota la seva passió.
+        </p>
+        <div class="more-content hidden text-gray-700 leading-relaxed mt-4">
+          <p>
+            El 25 d'abril de 2023 es va transformar en una jornada històrica per a tots nosaltres, el Jovent Gironi, que vam viure cada minut des de la grada amb el cor a la mà. Des del xiulet inicial, el Montilivi es va omplir d'un fervor inigualable. L'emoció era palpable a l'aire, i cada afició, cada pancarta i cada cant es van unir en una sola veu que ressonava per totes les graderies. <br><br>
+            El partit va començar amb una intensitat sorprenent. Als 12 minuts, després d'una jugada col·lectiva perfecta, el nostre equip va obrir el marcador amb un golass que va encendre la grada. L'explosió d'eufòria va ser indescriptible; cada crit, cada abraçada i cada llàgrima d'emoció es van estendre com una ona imparable. Però el Reial Madrid no va trigar a respondre i, poc després, va empatar el marcador, la qual cosa va fer augmentar encara més l'adrenalina entre nosaltres.<br><br>
+            L'ambient es va tornar electrificant quan, als 30 minuts, va sorgir un esclat de genialitat individual. Un jugador es va deslligar del seu marcador amb una habilitat admirable i va anotar un segon gol, aixecant la grada en un clam que semblava desafiar les mateixes lleis de la física. Els nostres cants, plens de força i determinació, van ressonar per tot l'estadi, fent-nos sentir que la passió era la veritable protagonista de la tarda.<br><br>
+            En la segona part, el Girona va demostrar novament el seu temple. Amb la convicció ferma de donar-ho tot a la pista, va arribar el tercer gol després d'una jugada assaigada, fruit de la coordinació i el coratge que sempre ens ha caracteritzat. Cada aficionat de el Jovent Gironi vivia aquell gol com si fos personal, cantant i vibran al mateix ritme que l'equip. I quan, als 80 minuts, un tiro lliure magistral va segellar el marcador a 4-2, l'estadi es va convertir en un mar d'eufòria i orgull.<br><br>
+            Aquella tarda, més que un resultat, es va forjar una experiència inoblidable. La grada va ser testimoni de com la passió, el coratge i l'esperit de lluita es materialitzaven en cada jugada, en cada crit i en cada batec del cor. Per a nosaltres, el Jovent Gironi, no hi hauria pogut haver una major alegria que veure el nostre equip superar un gegant, deixant una empremta inesborrable en la història del club i en la memòria de cada aficionat.
+            Aquesta victòria, viscuda intensament des de les graderies, és la prova que la força de l'afició i l'amor pel Girona poden convertir qualsevol partit en una autèntica festa de passió i esperança. Quin dia aquell 25 d'abril, que quedarà gravat per sempre en la nostra història!
+          </p>
+        </div>
+        <a href="#" class="toggle-btn text-red-700 hover:underline mt-4 block">Llegir més...</a>
+      </article>
+      
+      <!-- Notícia 3 -->
+      <article class="bg-white shadow-lg rounded-lg p-6 mb-6">
+        <img src="img/noticia2.png" alt="Trobada de la Jovent Gironi" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4">
+        <h2 class="text-2xl font-bold text-red-800 mb-2">
+          Trobada Màgica del Jovent Gironi
+        </h2>
+        <p class="text-gray-600 text-sm mb-4">Data: 28/03/2025</p>
+        <p class="text-gray-700 leading-relaxed">
+          El Jovent Gironi organitza una trobada única per a tots els aficionats, amb activitats, càntics i sorpreses a l'estadi Montilivi. Una ocasió per compartir la passió pel Girona i reforçar els llaços entre la comunitat.
+        </p>
+        <div class="more-content hidden text-gray-700 leading-relaxed mt-4">
+          <p>
+          El passat cap de setmana, l'estadi Montilivi va vibrar amb una energia inigualable gràcies a la trobada organitzada pel Jovent Gironi, que va reunir centenars d'aficionats amb el desig de celebrar la passió pel nostre equip. L'acte, que va ser tot un festival de càntics, activitats interactives i sorpreses, va demostrar la força i la unitat d'una comunitat que viu cada partit amb el cor a la mà.<br><br>
+          Durant la jornada, van tenir lloc diverses iniciatives pensades per apropar els aficionats al món del Girona. Els organitzadors van preparar espais dedicats a la història i a la cultura del club, així com zones de jocs i concursos, que van fer que la trobada fos dinàmica i plena de diversió per a totes les edats.<br><br>
+          Entre els moments més memorables, l'assistència de figures emblemàtiques del primer equip va omplir de orgull als assistents. L'etern capità, Cristian Stuani, va ser una presència destacada, transmetent el seu missatge de sacrifici i amor per la camisa, i recordant a tots que la passió i la determinació són clau per aconseguir grans fites. A més, l'entrenador, conegut per tots com Michel "Michel Català", va ser també present, reforçant la seva imatge de referent i proper al poble, tal com l'apodava el Jovent Gironi.<br><br>
+          La trobada va ser molt més que un esdeveniment; va ser una veritable festa de la identitat i la cultura gironista, on els aficionats van poder compartir experiències, intercanviar records i, sobretot, demostrar que la passió pel Girona és una flama que mai s'apaga. Amb càntics que ressonaven a tot l'estadi i un ambient carregat d'emoció, la jornada va deixar una empremta inesborrable en la memòria de tots els que hi van participar.<br><br>
+          Sense cap mena de dubte, aquesta trobada màgica ha estat una nova prova que, quan la comunitat es reuneix amb un mateix objectiu, el resultats són espectaculars: un Girona més unit, apassionat i viu que mai.
+          </p>
+        </div>
+        <a href="#" class="toggle-btn text-red-700 hover:underline mt-4 block">Llegir més...</a>
+      </article>
+      <!-- Noticia 4 -->
+      <article class="bg-white shadow-lg rounded-lg p-6 mb-6" id="paris">
+        <img src="img/viatge-paris.jpg" alt="Viatge a París" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4">
+        <h2 class="text-2xl font-bold text-red-800 mb-2">
+          Desplaçament a París amb el Jovent Gironí
+        </h2>
+        <p class="text-gray-600 text-sm mb-4">Data: 18/09/2025</p>
+        <p class="text-gray-700 leading-relaxed">
+          El Jovent Gironí organitza un viatge en autobús fins a París per animar el Girona FC en un partit que promet ser memorable. 
+          Sortirem des de l'Estadi de Montilivi i, un cop a la capital francesa, ens reunirem en un punt de trobada especial. 
+          Uneix-te a nosaltres per viure una experiència única!
+        </p>
+        <div class="more-content hidden text-gray-700 leading-relaxed mt-4">
+          <p>
+            L’autobús sortirà de Montilivi a primera hora del matí i arribarem a la Plaça del Trocadéro cap a les 12:00h. 
+            Posteriorment, ens retrobarem a les 17:30h a Porte de Saint-Cloud, molt a prop del Parc dels Prínceps, 
+            on animarem el nostre equip amb tota la passió gironina. <br><br>      
+            <strong>Punts clau del viatge:</strong><br>
+            &bull; Sortida des de l’Estadi de Montilivi (Girona)<br>
+            &bull; Punt de trobada a la Plaça del Trocadéro (12:00h)<br>
+            &bull; Segon punt de trobada a Porte de Saint-Cloud (17:30h)<br>
+            &bull; Retorn cap a Girona després del partit<br><br>
+            <img src="img/mapa-paris.jpg" alt="Mapa de París" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4 cursor-pointer">
+            El preu és de 75€ per als socis i 105€ per als no socis, i inclou únicament el trajecte en autobús. 
+            Per a més informació o per apuntar-vos, contacteu-nos per WhatsApp al 679.94.65.64 o al nostre correu 
+            <em>joventgironi@gmail.com</em>.<br><br>
+            No deixeu passar aquesta oportunitat de viure una jornada inoblidable i donar suport al Girona FC a la capital francesa. 
+            Us hi esperem!
+          </p>
+        </div>
+        <a href="#" class="toggle-btn text-red-700 hover:underline mt-4 block">Llegir més...</a>
+      </article>
+
+      <!-- Notícia 5 -->
+      <article class="bg-white shadow-lg rounded-lg p-6 mb-6">
+        <img src="img/noticia3.jpg" alt="Projecte Solidari" class="w-full lg:h-56 object-cover lg:object-contain rounded mb-4">
+        <h2 class="text-2xl font-bold text-red-800 mb-2">
+          Stuani i el Girona: El Somni Europeu Més Aprop Que Mai
+        </h2>
+        <p class="text-gray-600 text-sm mb-4">Data: 20/03/2025</p>
+        <p class="text-gray-700 leading-relaxed">
+          Des del cor de Montilivi, el Jovent Gironí vibra amb la possibilitat històrica de veure el nostre equip lluitar entre els grans d'Europa. La passió i l'entrega de l'afició són el motor que impulsa aquest somni cap a la realitat.
+        </p>
+        <div class="more-content hidden text-gray-700 leading-relaxed mt-4">
+          <p>
+            El passat diumenge, sota una pluja incessant que no va minvar l'ànim dels gairebé 13.000 aficionats presents a Montilivi, el Girona FC va aconseguir una victòria èpica davant el Betis per 3-2. Aquest triomf no només consolida l'equip en posicions europees, sinó que també acosta el somni de disputar la Champions League. <br><br>
+            En una mostra de valentia i determinació, l'entrenador Míchel va apostar per una tàctica ofensiva en els minuts finals, substituint el central David López per l'emblemàtic davanter Cristhian Stuani. Aquesta decisió va resultar ser encertada, ja que en el temps afegit, Stuani va marcar el gol de la victòria, desencadenant una explosió d'alegria entre l'afició. <br><br>
+            Des del Jovent Gironí, volem destacar la importància d'aquest moment històric. La possibilitat de veure el nostre capità, Stuani, liderant l'equip en una competició europea és un somni compartit per tots nosaltres. Com va afirmar Míchel en roda de premsa: "Stuani portarà el braçalet de capità en el primer partit europeu del Girona; és segurament el millor jugador de la història del club."<br><br>
+            Amb només vuit partits restants i 24 punts en joc, el Girona FC té una oportunitat d'or per segellar la seva classificació a la Champions. Des de la grada, el Jovent Gironí continuarà animant amb força, demostrant que la passió i el suport incondicional de l'afició són fonamentals per assolir aquest objectiu. <br><br>
+            Fem una crida a tots els seguidors perquè s'uneixin a nosaltres en aquest tram final de la temporada. Junts, podem fer realitat el somni europeu i portar el nom del Girona FC al més alt nivell del futbol continental. 
+          </p>
+        </div>
+        <a href="#" class="toggle-btn text-red-700 hover:underline mt-4 block">Llegir més...</a>
+      </article>
+    </section>
+  </main>
+
+<!-- Footer -->
+<footer class="bg-[#CF152D] text-white py-8 w-full">
+  <div class="container mx-auto px-4">
+    <!-- Seccions Principals -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <!-- Sobre Nosaltres -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">Sobre Nosaltres</h2>
+        <p class="text-gray-100">
+          Som una organització juvenil apassionada pel Girona FC que viu i impulsa la grada amb emoció i compromís.
+          Descobreix la nostra història, valors i la passió que ens uneix.
+        </p>
+      </div>
+      <!-- Enllaços Ràpids -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">Enllaços Ràpids</h2>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-gray-400 text-gray-100">Inici</a></li>
+          <li><a href="identitat.html" class="hover:text-gray-400 text-gray-100">Identitat</a></li>
+          <li><a href="noticies.html" class="hover:text-gray-400 text-gray-100">Notícies</a></li>
+          <li><a href="botiga.html" class="hover:text-gray-400 text-gray-100">Botiga</a></li>
+          <li><a href="galeria.html" class="hover:text-gray-400 text-gray-100">Galeria</a></li>
+          <li><a href="contacte.html" class="hover:text-gray-400 text-gray-100">Contacte</a></li>          
+        </ul>
+      </div>
+      <!-- Contacte i Enllaços d’Interès -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">Contacte i Informació</h2>
+        <p class="text-gray-100 mb-2">Tel: <a href="tel:+34679946564" class="hover:text-gray-400 text-gray-100" target="_blank">(+34) 679 946 564</a></p>
+        <p class="text-gray-100">Correu: <a href="mailto:joventgironi@gmail.com" class="hover:text-gray-400 text-gray-100" target="_blank">joventgironi@gmail.com</a></p>
+        <h3 class="text-lg font-bold mt-4 mb-2">Enllaços d’Interès</h3>
+        <ul class="space-y-1">
+          <li><a href="https://www.gironafc.cat/" target="_blank" class="hover:text-gray-400 text-gray-100">Partners</a></li>
+          <li><a href="https://www.gironafc.cat/" target="_blank" class="hover:text-gray-400 text-gray-100">Col·laboracions</a></li>
+          <li><a href="https://www.gironafc.cat/" target="_blank" class="hover:text-gray-400 text-gray-100">Recursos</a></li>
+        </ul>
+      </div>
+      <!-- Newsletter -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">Subscriu-te al Newsletter</h2>
+        <form action="https://formspree.io/f/xrbelzqz" method="POST" class="space-y-3">
+          <div>
+            <label for="email" class="block text-gray-100 mb-1">Correu electrònic</label>
+            <input type="email" id="email" name="email" placeholder="El teu correu" required
+              class="w-full p-2 rounded border border-gray-300 text-gray-800">
+          </div>
+          <div class="flex items-center justify-center">
+            <input type="checkbox" id="privacy" name="privacy" required class="mr-2">
+            <label for="privacy" class="text-gray-100 text-sm">* Accepto la política de privacitat</label>
+          </div>
+          <button type="submit"
+            class="bg-gray-100 text-[#CF152D] px-4 py-2 rounded font-bold hover:bg-gray-400 transition">
+            Subscriure't
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Xarxes Socials i Copyright -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-8 border-t border-gray-700 pt-4">
+      <!-- Xarxes Socials -->
+      <div class="flex space-x-4 justify-center gap-4"> <a href="https://www.instagram.com/JoventGironi" target="_blank"
+          aria-label="Instagram Jovent Gironí" class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg
+            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+            <path
+              d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm5.5-.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z" />
+          </svg> </a> <a href="https://www.facebook.com/JoventGironi" target="_blank" aria-label="Facebook Jovent Gironí"
+          class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+            <path
+              d="M22 12.07C22 6.54 17.52 2 12 2S2 6.54 2 12.07c0 5 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34V22c4.78-.76 8.44-4.88 8.44-9.93Z" />
+          </svg> </a> <a href="https://twitter.com/JoventGironi" target="_blank" aria-label="Twitter Jovent Gironí"
+          class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+            <path
+              d="M22.46 6c-.77.35-1.5.59-2.28.69a4.01 4.01 0 0 0 1.77-2.22 7.78 7.78 0 0 1-2.47.95 3.92 3.92 0 0 0-6.68 3.57A11.13 11.13 0 0 1 3.16 5.15a3.92 3.92 0 0 0 1.21 5.23 3.88 3.88 0 0 1-1.77-.5v.05a3.93 3.93 0 0 0 3.14 3.84 4 4 0 0 1-1.76.07 3.93 3.93 0 0 0 3.67 2.73A7.87 7.87 0 0 1 2 18.57 11.11 11.11 0 0 0 8.29 20c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.36 8.36 0 0 0 22.46 6Z" />
+          </svg> </a> <a href="https://www.youtube.com/@joventgironi" target="_blank" aria-label="YouTube Jovent Gironí"
+          class="text-gray-100 hover:scale-125 transition-transform duration-300 hover:text-[#6BAB25]"> <svg xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 24 24" class="h-10 w-10">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21.8 8s-.2-1.4-.8-2a3 3 0 0 0-2.1-.8C16.9 5 12 5 12 5s-4.9 0-7.9.2a3 3 0 0 0-2.1.8c-.6.6-.8 2-.8 2S1 9.6 1 11.2v1.6C1 14.4 1.2 16 1.2 16s.2 1.4.8 2a3 3 0 0 0 2.1.8C7.1 19 12 19 12 19s4.9 0 7.9-.2a3 3 0 0 0 2.1-.8c.6-.6.8-2 .8-2s.2-1.6.2-3.2V11.2c0-1.6-.2-3.2-.2-3.2ZM10 15V9l6 3-6 3Z" />
+          </svg> </a> </div>
+      <div class="text-sm text-gray-100">
+        &copy; 2025 Jovent Gironí. Tots els drets reservats.
+      </div>
+    </div>
+  </div>
+</footer>    
+  </div>
+  <script>
+    // MENU HAMBURGUESA
+    const hamburgerBtn = document.querySelector("#hamburgerBtn");
+    const mobileMenu = document.querySelector("#mobileMenu");
+    const iconSpan    = hamburgerBtn.querySelector("span");
+
+    hamburgerBtn.addEventListener("click", () => {
+      // 1) Amagar/mostrar el menú
+      mobileMenu.classList.toggle("hidden");
+
+      // 2) Girar la icona de hamburguesa 180° o tornar a 0°
+      iconSpan.classList.toggle("rotate-90");
+   
+      // 3) Per accessibilitat, actualitza l'atribut aria-expanded
+      const expanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
+      hamburgerBtn.setAttribute("aria-expanded", expanded ? "false" : "true");
+    });
+      // Afegir esdeveniments de clic per als botons "Llegir més" / "Llegir menys"
+      document.querySelectorAll('.toggle-btn').forEach(btn => { btn.addEventListener('click', e => { e.preventDefault(); 
+        let c = btn.previousElementSibling; 
+        if (c.classList.contains('hidden')) { btn.dataset.prevScroll = window.pageYOffset; 
+          c.classList.remove('hidden'); btn.textContent = "Llegir menys" } 
+        else { c.classList.add('hidden'); btn.textContent = "Llegir més..."; setTimeout(() => { let p = btn.dataset.prevScroll; p && window.scrollTo({ top: +p, behavior: "smooth" }) }, 100) } }) });
+    </script>
+</body>
+</html>

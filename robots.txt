@@ -1,0 +1,36 @@
+# robots.txt per a https://jovent-gironi17.netlify.app/
+
+User-agent: *
+Allow: /index.html
+Allow: /identitat.html
+Allow: /noticies.html
+Allow: /galeria.html
+Allow: /botiga.html
+Allow: /contacte.html
+
+# Permetre l'accés als recursos CSS i fonts
+Allow: /src/output.css
+Allow: /font/Montserrat-SemiBold.woff2
+Allow: /font/Montserrat-Bold.woff2
+Allow: /font/Roboto-Regular.woff2
+Allow: /font/Roboto-Medium.woff2
+
+Disallow: /404.html
+Disallow: /img/privat/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Sitemap
+Sitemap: https://jovent-gironi17.netlify.app/sitemap.xml
+
+# Directrius SEO (comentaris per a la gestió interna)
+# El lloc representa al Jovent Gironí, grada d'animació oficial que dona suport al Girona FC
+# Centrat en: animació, viatges, notícies, esdeveniments i botiga
+# Idioma principal: català
+
+# Keywords (comentaris per SEO):
+# Jovent Gironí, Girona FC, grada d'animació, viatges futbol, comunitat jove, botiga Girona, futbol català, animació Montilivi, samarretes Girona, viure el futbol, desplaçaments afició, suporters Girona, ultras Girona, esdeveniments Girona FC, càntics futbol, Jovent,
+
+# Velocitat de rastreig
+
+

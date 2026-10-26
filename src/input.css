@@ -1,0 +1,61 @@
+@import "fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables globals definides en :root */
+:root {
+  --font-sans: 'Roboto', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-text: #333;
+  --color-primary: #CF152D;
+  --color-hover: #a00;
+  --color-text-hover: white;
+}
+
+::selection {
+  @apply bg-red-600 text-white;
+}
+/* Estils globals utilitzant @apply i les variables CSS */
+body {
+  @apply font-sans leading-6 text-[var(--color-text)];
+}
+
+h1 {
+  @apply font-montserrat font-bold uppercase mb-4;
+}
+
+h2,
+h3 {
+  @apply font-montserrat font-semibold mb-3;
+}
+
+a {
+  @apply font-sans font-medium text-[var(--color-primary)] transition-colors duration-300;
+}
+/* Enllaç per saltar al contingut (skip link) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@layer components {
+  @media (min-width: 1024px) {
+    #hamburgerBtn {
+      display: none !important;
+    }
+  }
+}
+
+
